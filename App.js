@@ -1,6 +1,6 @@
 
 
-import * as React from 'react';
+import React, {useEffect,useState} from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -27,6 +27,9 @@ import Diamond from './Screens/Diamond';
 import SelectTimeOne from './Sumrryslot/SelectTimeOne';
 import ChangeLocation from './Screens/ChangeLocation';
 import Example from './Screens/Example';
+import {requestUserPermission,NotificationListner} from './Screens/NotificationServices';
+import { initialWindowMetrics } from 'react-native-safe-area-context';
+import { init } from 'nativescript-plugin-firebase';
 
 
 
@@ -48,9 +51,16 @@ import Example from './Screens/Example';
 //   );
 // }
 
+
 const Stack = createNativeStackNavigator();
 
 function App() {
+  useEffect(() => {
+    requestUserPermission();
+    NotificationListner();
+    
+  })
+
   return (
     <NavigationContainer>
       <Stack.Navigator>

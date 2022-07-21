@@ -53,9 +53,10 @@
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
-        fetch("http://3.109.48.115:5500/user/signup", {
+        fetch("http://localhost:5500/user/signup", {
           method: 'POST',
           headers: myHeaders,
+          
           body: JSON.stringify({"contactNo": mob}),
           redirect: 'follow'
         })
@@ -149,7 +150,7 @@
                     style={{ height: 25, width: 25 }}
                     source={require('../assets/facebook.png')}
                 />
-                <Text style={{ color: 'black', fontSize: 14, fontFamily: 'Poppins-Regular', fontWeight: '500', marginLeft: 70 }}>Continue with Google</Text>
+                <Text style={{ color: 'black', fontSize: 14, fontFamily: 'Poppins-Regular', fontWeight: '500', marginLeft: 70 }}>Continue with facebook</Text>
             </TouchableOpacity>
 
        </View>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "51352717804",
+    "project_id": "seekmeapp-356709",
+    "storage_bucket": "seekmeapp-356709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51352717804:android:54f1635169fad2df6818c9",
+        "android_client_info": {
+          "package_name": "com.seekmeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51352717804-el2l6ptlpr4ee3h9trefkp1t09is5uf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNleBZu52ajxun5r_F4w_FflKBiPmb-nw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51352717804-el2l6ptlpr4ee3h9trefkp1t09is5uf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
