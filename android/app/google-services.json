@@ -12,12 +12,7 @@
           "package_name": "com.seekmeapp"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "51352717804-el2l6ptlpr4ee3h9trefkp1t09is5uf6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
           "current_key": "AIzaSyCNleBZu52ajxun5r_F4w_FflKBiPmb-nw"
@@ -27,7 +22,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "51352717804-el2l6ptlpr4ee3h9trefkp1t09is5uf6.apps.googleusercontent.com",
+              "client_id": "51352717804-requfbarfod2b7223gvvscet9jragv4b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -30,6 +30,8 @@ import Example from './Screens/Example';
 import {requestUserPermission,NotificationListner} from './Screens/NotificationServices';
 import { initialWindowMetrics } from 'react-native-safe-area-context';
 import { init } from 'nativescript-plugin-firebase';
+import SignInButton from './Screens/SignInButton';
+
 
 
 
@@ -85,7 +87,7 @@ function App() {
 
 
       <Stack.Screen options={{ headerShown: false }} name="Otp" component={Otp} />
-      <Stack.Screen options={{ headerShown: false }} name="Home" component={Tabs} />
+      <Stack.Screen options={{ headerShown: false }} name="Taps" component={Tabs} />
       <Stack.Screen options={{ headerShown: false }} name="HomeOneScroll" component={HomeOneScroll} />
       <Stack.Screen options={{ headerShown: false }} name="Salonforwomen" component={Salonforwomen} />
       <Stack.Screen options={{ headerShown: false }} name="Facialforglow" component={Facialforglow} />
@@ -94,8 +96,9 @@ function App() {
       <Stack.Screen options={{ headerShown: false }} name="SelectedServices" component={SelectedServices} />
       <Stack.Screen options={{ headerShown: false }} name="Map" component={Map} />
       <Stack.Screen options={{ headerShown: false }} name="SelectTimeOne" component={SelectTimeOne} />
+      <Stack.Screen options={{ headerShown: false }} name="SignInButton" component={SignInButton} />
       {/* <Stack.Screen options={{ headerShown: false }} name="ChangeLocation" component={ChangeLocation} /> */}
-
+      <Stack.Screen options={{ headerShown: false }} name="Home" component={Home} />
            </Stack.Navigator>
     </NavigationContainer>
   );

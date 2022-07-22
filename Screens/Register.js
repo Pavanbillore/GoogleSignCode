@@ -30,8 +30,10 @@
  } from 'react-native/Libraries/NewAppScreen';
  import Drop from 'react-native-vector-icons/AntDesign';
  import SignInButton from './SignInButton';
+ import Home from './Home';
  const Register = ({ navigation }) => {
-
+  
+  
   const [mob, setMob] = React.useState("");
 
   const _login = () => {
@@ -142,10 +144,17 @@
             </View>
 
             </View>
+            <TouchableOpacity onPress={()=>navigation.navigate(Home)} style={{ marginTop: 30, borderRadius: 5, padding: 20, backgroundColor: 'white', borderColor: '#E3E3E3', width: '100%', flexDirection: 'row',top:125,borderRadius:12,borderWidth:1 }}>
+              <Image
+                    style={{ height: 25, width: 25 }}
+                    source={require('../assets/google.png')}
+                />
+                <Text style={{ color: 'black', fontSize: 14, fontFamily: 'Poppins-Regular', fontWeight: '500', marginLeft: 70 }}>Continue with Google</Text>
+            </TouchableOpacity>
 <SignInButton />
             
 
-            <TouchableOpacity style={{ marginTop: 10, borderRadius: 5, padding: 20, backgroundColor: 'white', borderColor: '#E3E3E3', width: '100%', flexDirection: 'row',top:200,borderRadius:12 ,borderWidth:1}}>
+            <TouchableOpacity  style={{ marginTop: 10, borderRadius: 5, padding: 20, backgroundColor: 'white', borderColor: '#E3E3E3', width: '100%', flexDirection: 'row',top:200,borderRadius:12 ,borderWidth:1}}>
                 <Image
                     style={{ height: 25, width: 25 }}
                     source={require('../assets/facebook.png')}

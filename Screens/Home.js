@@ -45,10 +45,10 @@ const Home = ({navigation}) => {
   const [categories, setcategories] = useState([]);
   // console.log('categories11', categories);
 
-  useEffect(() => {
-    requestUserPermission()
-    init();
-})
+//   useEffect(() => {
+//     requestUserPermission()
+//     init();
+// })
     // const requestOptions = {
     //     method: 'GET',
     //     redirect: 'follow'
